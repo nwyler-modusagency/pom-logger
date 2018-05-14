@@ -1,0 +1,30 @@
+{
+  "name": "pom-logger",
+  "version": "1.0.0",
+  "description": "Logger utility for POM-MS",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nwyler-modusagency/pom-logger.git"
+  },
+  "keywords": [
+    "POM",
+    "logger",
+    "error",
+    "log"
+  ],
+  "author": "Nicolas Wyler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nwyler-modusagency/pom-logger/issues"
+  },
+  "homepage": "https://github.com/nwyler-modusagency/pom-logger#readme",
+  "dependencies": {
+    "eslint-config-pom-core-eslint": "^1.0.0",
+    "SplunLogger": "file:./loggers/SplunkLogger.js",
+    "NewRelicLogger": "file:./loggers/NewRelicLogger.js"
+  }
+}
