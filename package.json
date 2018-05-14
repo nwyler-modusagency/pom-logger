@@ -1,10 +1,11 @@
 {
   "name": "pom-logger",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Logger utility for POM-MS",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "node test.js",
+    "build": "file-merge -i PomLogger.js, ./loggers/dist/**.js -o index.js"
   },
   "repository": {
     "type": "git",
@@ -23,8 +24,6 @@
   },
   "homepage": "https://github.com/nwyler-modusagency/pom-logger#readme",
   "dependencies": {
-    "eslint-config-pom-core-eslint": "^1.0.0",
-    "newreliclogger": "file:loggers/NewRelicLogger",
-    "splunklogger": "file:loggers/SplunkLogger"
+    "eslint-config-pom-core-eslint": "^1.0.0"
   }
 }
