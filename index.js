@@ -2,7 +2,7 @@ const fs = require('fs');
 const NewRelicLogger = require('./loggers/NewRelicLogger.js');
 const SplunkLogger = require('./loggers/SplunkLogger.js');
 
-const loggersAvailable = fs.readdirSync('loggers/dist');
+const loggersAvailable = fs.readdirSync('loggers/');
 for (let i = 0; i < loggersAvailable.length; i++) {
     loggersAvailable[i] = loggersAvailable[i].replace('.js', '').trim();
 }
@@ -31,8 +31,7 @@ class PomLogger {
             const err = 'Type of logger requested does not exist';
             throw err;
         } else {
-            const LoggerClass = loggersAvailable[whichLogger]
-            return new LoggerClass();
+            
         }
     }
 }

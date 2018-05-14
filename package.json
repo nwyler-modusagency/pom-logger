@@ -1,6 +1,6 @@
 {
   "name": "pom-logger",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Logger utility for POM-MS",
   "main": "index.js",
   "scripts": {
