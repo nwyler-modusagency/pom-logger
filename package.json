@@ -4,8 +4,7 @@
   "description": "Logger utility for POM-MS",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js",
-    "build": "file-merge -i PomLogger.js, ./loggers/dist/**.js -o index.js"
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",

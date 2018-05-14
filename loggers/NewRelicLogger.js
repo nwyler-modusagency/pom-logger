@@ -1,4 +1,4 @@
-const BaseLogger = require('../BaseLogger');
+const BaseLogger = require('./BaseLogger');
 
 class NewRelicLogger extends BaseLogger {
     constructor() {
