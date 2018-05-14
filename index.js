@@ -5,7 +5,7 @@ for (let i = 0; i < loggersAvailable.length; i++) {
     loggersAvailable[i] = loggersAvailable[i].replace('.js', '').trim();
 }
 
-class POMLogger {
+class PomLogger {
     constructor(Logger) {
         // type of logger needed is not specified, throw an error
         if (!Logger) {
@@ -42,4 +42,4 @@ class POMLogger {
     }
 }
 
-module.exports = POMLogger;
+module.exports = PomLogger;
