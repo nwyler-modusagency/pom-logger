@@ -23,8 +23,6 @@
   },
   "homepage": "https://github.com/nwyler-modusagency/pom-logger#readme",
   "dependencies": {
-    "eslint-config-pom-core-eslint": "^1.0.0",
-    "SplunLogger": "file:./loggers/SplunkLogger.js",
-    "NewRelicLogger": "file:./loggers/NewRelicLogger.js"
+    "eslint-config-pom-core-eslint": "^1.0.0"
   }
 }
