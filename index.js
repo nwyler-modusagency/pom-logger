@@ -1,6 +1,6 @@
 const fs = require('fs');
-const NewRelicLogger = require('loggers/dist/NewRelicLogger');
-const SplunkLogger = require('loggers/dist/SplunkLogger');
+const NewRelicLogger = require('loggers/NewRelicLogger.js');
+const SplunkLogger = require('loggers/SplunkLogger.js');
 
 const loggersAvailable = fs.readdirSync('loggers/dist');
 for (let i = 0; i < loggersAvailable.length; i++) {
