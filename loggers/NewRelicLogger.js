@@ -1,4 +1,4 @@
-const BaseLogger = require('./BaseLogger');
+import BaseLogger from './BaseLogger';
 
 class NewRelicLogger extends BaseLogger {
     constructor() {
@@ -14,4 +14,4 @@ class NewRelicLogger extends BaseLogger {
     }
 }
 
-module.exports = NewRelicLogger;
+export default NewRelicLogger;

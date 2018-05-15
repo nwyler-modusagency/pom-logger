@@ -14,4 +14,4 @@ class BaseLogger {
     }
 }
 
-module.exports = BaseLogger;
+export default BaseLogger;
