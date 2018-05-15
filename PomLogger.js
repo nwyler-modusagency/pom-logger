@@ -36,4 +36,4 @@ class PomLogger {
     }
 }
 
-export default PomLogger;
+module.exports = PomLogger;

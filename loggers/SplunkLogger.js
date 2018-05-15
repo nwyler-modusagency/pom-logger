@@ -1,4 +1,4 @@
-import BaseLogger from './BaseLogger';
+const BaseLogger = require('./BaseLogger');
 
 class SplunkLogger extends BaseLogger {
     constructor() {
@@ -14,4 +14,4 @@ class SplunkLogger extends BaseLogger {
     }
 }
 
-export default SplunkLogger;
+module.exports = SplunkLogger;
