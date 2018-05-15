@@ -1,4 +1,7 @@
 
+var fs = require('fs');
+var path =
+
 class PomLogger {
     constructor(Logger) {
         // type of logger needed is not specified, throw an error
@@ -6,7 +9,13 @@ class PomLogger {
             const err = `You must specify the logger you want to use.`;
             throw err;
         } else {
-            return new Logger();
+            const loggerPath = path.resolve('/loggers', `${Logger.name}.js`);
+            if (fs.existsSync(loggerPath)) {
+                return new Logger();
+            } else {
+                const err = `The logger specified  was not found.`;            
+                throw err;
+            }   
         }
     }
 }
