@@ -4,8 +4,9 @@
   "description": "Logger utility for POM-MS",
   "main": "PomLogger.js",
   "scripts": {
+    "pretest": "NODE_ENV=test",
     "test": "node test.js",
-    "prepublishOnly": "eslint --ignore-path .gitignore ."
+    "prepublishOnly": "NODE_ENV=production eslint --ignore-path .gitignore ."
   },
   "repository": {
     "type": "git",
