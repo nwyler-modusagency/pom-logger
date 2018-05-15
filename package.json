@@ -1,10 +1,11 @@
 {
   "name": "pom-logger",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Logger utility for POM-MS",
   "main": "PomLogger.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "node test.js",
+    "prepublish": "eslint --ignore-path .gitignore ."
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   },
   "homepage": "https://github.com/nwyler-modusagency/pom-logger#readme",
   "dependencies": {
-    "eslint-config-pom-core-eslint": "^1.0.0"
+    "eslint-config-pom-core-eslint": "^1.0.0",
+    "path": "^0.12.7"
   }
 }

@@ -15,3 +15,4 @@ class SplunkLogger extends BaseLogger {
 }
 
 module.exports = SplunkLogger;
+
