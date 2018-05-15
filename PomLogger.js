@@ -1,6 +1,5 @@
 
 var fs = require('fs');
-var path =
 
 class PomLogger {
     constructor(Logger) {
