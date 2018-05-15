@@ -1,11 +1,11 @@
 {
   "name": "pom-logger",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Logger utility for POM-MS",
   "main": "PomLogger.js",
   "scripts": {
     "test": "node test.js",
-    "prepublish": "eslint --ignore-path .gitignore ."
+    "prepublishOnly": "eslint --ignore-path .gitignore ."
   },
   "repository": {
     "type": "git",
